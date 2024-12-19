@@ -7,7 +7,7 @@ Xiaojing Yang<br />
 
 ## Installation
 
-Please refer to [install.md](docs/install.md) for installation.
+Please install [GOTCHA dataset](https://pan.baidu.com/s/1YxGAqYEadsIHLqTEEo6Lxg?pwd=7zka).
 
 
 ## Getting Started
