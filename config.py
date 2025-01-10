@@ -1,0 +1,21 @@
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--dataset', default='GOTCHA', help='FLO')
+parser.add_argument('--dataroot', default='./data', help='path to dataset')
+parser.add_argument('--matdataset', default=True, help='Data in matlab format')
+parser.add_argument('--image_embedding', default='res101')
+parser.add_argument('--class_embedding', default='att',help='att or sent')
+parser.add_argument('--dataset_loc', default='loc')
+parser.add_argument('--preprocessing', action='store_true', default=True, help='enbale MinMaxScaler on visual features')
+parser.add_argument('--standardization', action='store_true', default=False)
+parser.add_argument('--validation', action='store_true', default=False, help='enable cross validation mode')
+parser.add_argument('--batch_size', type=int, default=128, help='input batch size')
+parser.add_argument('--resSize', type=int, default=2048, help='size of visual features')
+parser.add_argument('--embedSize', type=int, default=2048, help='size of embedding h')
+parser.add_argument('--outzSize', type=int, default=512, help='size of non-liner projection z')
+parser.add_argument('--cuda', action='store_true', default=True, help='enables cuda')
+
+parser.add_argument('--gpus', default='0', help='the number of the GPU to use')
+opt = parser.parse_args()
+print(opt)
